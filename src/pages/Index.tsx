@@ -46,18 +46,18 @@ const Index = () => {
                 СТУПЕНИ НАШЕГО С ВАМИ СОТРУДНИЧЕСТВА:
               </h2>
 
-              <div className="space-y-6">
+              <div className="space-y-4">
                 <Card className="border-2 hover:shadow-lg transition-all duration-300">
-                  <CardContent className="p-6 lg:p-8">
-                    <div className="flex gap-4 items-start">
-                      <div className="w-12 h-12 rounded-full bg-accent text-white flex items-center justify-center font-heading text-xl font-bold flex-shrink-0">
+                  <CardContent className="p-5">
+                    <div className="flex gap-3 items-start">
+                      <div className="w-10 h-10 rounded-full bg-accent text-white flex items-center justify-center font-heading text-lg font-bold flex-shrink-0">
                         1
                       </div>
                       <div>
-                        <h3 className="font-heading text-xl font-bold text-primary mb-3">
+                        <h3 className="font-heading text-lg font-bold text-primary mb-1">
                           ОЦЕНИТЬ ВОЗМОЖНОСТИ
                         </h3>
-                        <p className="text-muted-foreground leading-relaxed">
+                        <p className="text-sm text-muted-foreground leading-relaxed">
                           Вы хотите освоить новое направление работы, не имеете опыта, но хотите получить объективную информацию
                         </p>
                       </div>
@@ -66,16 +66,16 @@ const Index = () => {
                 </Card>
 
                 <Card className="border-2 hover:shadow-lg transition-all duration-300">
-                  <CardContent className="p-6 lg:p-8">
-                    <div className="flex gap-4 items-start">
-                      <div className="w-12 h-12 rounded-full bg-accent text-white flex items-center justify-center font-heading text-xl font-bold flex-shrink-0">
+                  <CardContent className="p-5">
+                    <div className="flex gap-3 items-start">
+                      <div className="w-10 h-10 rounded-full bg-accent text-white flex items-center justify-center font-heading text-lg font-bold flex-shrink-0">
                         2
                       </div>
                       <div>
-                        <h3 className="font-heading text-xl font-bold text-primary mb-3">
+                        <h3 className="font-heading text-lg font-bold text-primary mb-1">
                           УЛУЧШИТЬ ПРАКТИКУ
                         </h3>
-                        <p className="text-muted-foreground leading-relaxed">
+                        <p className="text-sm text-muted-foreground leading-relaxed">
                           Вы имеете опыт участия в тендерах, сталкиваетесь с барьерами, но хотите стабильных побед с прогнозируемыми результатами
                         </p>
                       </div>
@@ -84,16 +84,16 @@ const Index = () => {
                 </Card>
 
                 <Card className="border-2 hover:shadow-lg transition-all duration-300">
-                  <CardContent className="p-6 lg:p-8">
-                    <div className="flex gap-4 items-start">
-                      <div className="w-12 h-12 rounded-full bg-accent text-white flex items-center justify-center font-heading text-xl font-bold flex-shrink-0">
+                  <CardContent className="p-5">
+                    <div className="flex gap-3 items-start">
+                      <div className="w-10 h-10 rounded-full bg-accent text-white flex items-center justify-center font-heading text-lg font-bold flex-shrink-0">
                         3
                       </div>
                       <div>
-                        <h3 className="font-heading text-xl font-bold text-primary mb-3">
+                        <h3 className="font-heading text-lg font-bold text-primary mb-1">
                           СТАТЬ ЛИДЕРОМ
                         </h3>
-                        <p className="text-muted-foreground leading-relaxed">
+                        <p className="text-sm text-muted-foreground leading-relaxed">
                           Вы регулярно участвуете в торгах, но Ваши цели выше и Вам нужна для их реализации надёжная команда профессионалов
                         </p>
                       </div>
