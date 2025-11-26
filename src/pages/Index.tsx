@@ -37,42 +37,78 @@ const Index = () => {
       <section id="home" className="pt-32 pb-20 px-6">
         <div className="container mx-auto max-w-6xl">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="animate-fade-in">
-              <h1 className="font-heading text-5xl lg:text-6xl font-bold text-primary mb-6 leading-tight">
-                Консалтинг для роста вашего бизнеса
+            <div className="animate-fade-in lg:col-span-2">
+              <h1 className="font-heading text-4xl lg:text-5xl font-bold text-primary mb-8 leading-tight text-center">
+                УВЕЛИЧИВАЕМ ВАШУ ПРИБЫЛЬ ПУТЁМ ЭФФЕКТИВНОГО УЧАСТИЯ В СТРОИТЕЛЬНЫХ ТЕНДЕРАХ
               </h1>
-              <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
-                Экспертные решения и стратегии для развития компании. Помогаем бизнесу достигать целей и увеличивать прибыль.
-              </p>
-              <div className="flex gap-4">
+              
+              <h2 className="font-heading text-2xl lg:text-3xl font-semibold text-primary mb-8 text-center">
+                СТУПЕНИ НАШЕГО С ВАМИ СОТРУДНИЧЕСТВА:
+              </h2>
+
+              <div className="space-y-6">
+                <Card className="border-2 hover:shadow-lg transition-all duration-300">
+                  <CardContent className="p-6 lg:p-8">
+                    <div className="flex gap-4 items-start">
+                      <div className="w-12 h-12 rounded-full bg-accent text-white flex items-center justify-center font-heading text-xl font-bold flex-shrink-0">
+                        1
+                      </div>
+                      <div>
+                        <h3 className="font-heading text-xl font-bold text-primary mb-3">
+                          ОЦЕНИТЬ ВОЗМОЖНОСТИ
+                        </h3>
+                        <p className="text-muted-foreground leading-relaxed">
+                          Вы хотите освоить новое направление работы, не имеете опыта, но хотите получить объективную информацию
+                        </p>
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
+
+                <Card className="border-2 hover:shadow-lg transition-all duration-300">
+                  <CardContent className="p-6 lg:p-8">
+                    <div className="flex gap-4 items-start">
+                      <div className="w-12 h-12 rounded-full bg-accent text-white flex items-center justify-center font-heading text-xl font-bold flex-shrink-0">
+                        2
+                      </div>
+                      <div>
+                        <h3 className="font-heading text-xl font-bold text-primary mb-3">
+                          УЛУЧШИТЬ ПРАКТИКУ
+                        </h3>
+                        <p className="text-muted-foreground leading-relaxed">
+                          Вы имеете опыт участия в тендерах, сталкиваетесь с барьерами, но хотите стабильных побед с прогнозируемыми результатами
+                        </p>
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
+
+                <Card className="border-2 hover:shadow-lg transition-all duration-300">
+                  <CardContent className="p-6 lg:p-8">
+                    <div className="flex gap-4 items-start">
+                      <div className="w-12 h-12 rounded-full bg-accent text-white flex items-center justify-center font-heading text-xl font-bold flex-shrink-0">
+                        3
+                      </div>
+                      <div>
+                        <h3 className="font-heading text-xl font-bold text-primary mb-3">
+                          СТАТЬ ЛИДЕРОМ
+                        </h3>
+                        <p className="text-muted-foreground leading-relaxed">
+                          Вы регулярно участвуете в торгах, но Ваши цели выше и Вам нужна для их реализации надёжная команда профессионалов
+                        </p>
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
+              </div>
+
+              <div className="flex gap-4 justify-center mt-8">
                 <Button size="lg" className="text-lg px-8">
                   Начать работу
                 </Button>
                 <Button size="lg" variant="outline" className="text-lg px-8">
                   Узнать больше
                 </Button>
-              </div>
-            </div>
-            <div className="animate-slide-up">
-              <div className="bg-gradient-to-br from-accent/10 to-primary/5 rounded-2xl p-12 border border-border">
-                <div className="grid grid-cols-2 gap-6">
-                  <div className="text-center p-6 bg-white rounded-xl">
-                    <div className="text-4xl font-heading font-bold text-accent mb-2">15+</div>
-                    <div className="text-sm text-muted-foreground">Лет опыта</div>
-                  </div>
-                  <div className="text-center p-6 bg-white rounded-xl">
-                    <div className="text-4xl font-heading font-bold text-accent mb-2">500+</div>
-                    <div className="text-sm text-muted-foreground">Проектов</div>
-                  </div>
-                  <div className="text-center p-6 bg-white rounded-xl">
-                    <div className="text-4xl font-heading font-bold text-accent mb-2">98%</div>
-                    <div className="text-sm text-muted-foreground">Довольных клиентов</div>
-                  </div>
-                  <div className="text-center p-6 bg-white rounded-xl">
-                    <div className="text-4xl font-heading font-bold text-accent mb-2">24/7</div>
-                    <div className="text-sm text-muted-foreground">Поддержка</div>
-                  </div>
-                </div>
               </div>
             </div>
           </div>
