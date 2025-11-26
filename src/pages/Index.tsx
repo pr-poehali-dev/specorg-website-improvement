@@ -93,34 +93,34 @@ const Index = () => {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
               {
-                icon: 'TrendingUp',
-                title: 'Стратегический консалтинг',
-                description: 'Разработка долгосрочных стратегий развития бизнеса и достижения целей'
-              },
-              {
-                icon: 'Users',
-                title: 'Управление персоналом',
-                description: 'Оптимизация HR-процессов, подбор и развитие команды'
-              },
-              {
-                icon: 'BarChart3',
-                title: 'Финансовый анализ',
-                description: 'Аудит финансовых показателей и рекомендации по оптимизации'
+                icon: 'ShoppingCart',
+                title: 'Выгодные закупки',
+                description: 'Предлагаем выгодные закупки по вашим критериям'
               },
               {
                 icon: 'Target',
-                title: 'Маркетинговая стратегия',
-                description: 'Разработка эффективных маркетинговых стратегий и их реализация'
+                title: 'Стратегия победы',
+                description: 'Разрабатываем стратегию победы'
               },
               {
-                icon: 'Settings',
-                title: 'Оптимизация процессов',
-                description: 'Автоматизация и улучшение бизнес-процессов компании'
+                icon: 'TrendingUp',
+                title: 'Финансовые инструменты',
+                description: 'Помогаем с финансовыми инструментами'
+              },
+              {
+                icon: 'DollarSign',
+                title: 'Финансовая поддержка',
+                description: 'Помогаем с финансовыми инструментами'
               },
               {
                 icon: 'ShieldCheck',
-                title: 'Управление рисками',
-                description: 'Анализ и минимизация бизнес-рисков, антикризисное управление'
+                title: 'Защита интересов',
+                description: 'Защищаем ваши интересы до заключения контракта'
+              },
+              {
+                icon: 'FileText',
+                title: 'Исполнение контракта',
+                description: 'Консультируем на этапе исполнения контракта'
               }
             ].map((service, idx) => (
               <Card key={idx} className="hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border-2">
