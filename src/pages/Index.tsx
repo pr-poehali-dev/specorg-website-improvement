@@ -1,12 +1,334 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { useState } from 'react';
+import { Button } from '@/components/ui/button';
+import { Card, CardContent } from '@/components/ui/card';
+import { Input } from '@/components/ui/input';
+import { Textarea } from '@/components/ui/textarea';
+import Icon from '@/components/ui/icon';
 
 const Index = () => {
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    message: ''
+  });
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    console.log('Form submitted:', formData);
+  };
+
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4 color-black text-black">Добро пожаловать!</h1>
-        <p className="text-xl text-gray-600">тут будет отображаться ваш проект</p>
-      </div>
+    <div className="min-h-screen">
+      <header className="fixed top-0 w-full bg-white/95 backdrop-blur-sm border-b border-border z-50">
+        <nav className="container mx-auto px-6 py-4">
+          <div className="flex items-center justify-between">
+            <div className="font-heading text-2xl font-bold text-primary">SPECORG</div>
+            <div className="hidden md:flex items-center gap-8">
+              <a href="#home" className="text-foreground hover:text-accent transition-colors">Главная</a>
+              <a href="#services" className="text-foreground hover:text-accent transition-colors">Услуги</a>
+              <a href="#about" className="text-foreground hover:text-accent transition-colors">О компании</a>
+              <a href="#contact" className="text-foreground hover:text-accent transition-colors">Контакты</a>
+            </div>
+            <Button className="hidden md:flex">Консультация</Button>
+          </div>
+        </nav>
+      </header>
+
+      <section id="home" className="pt-32 pb-20 px-6">
+        <div className="container mx-auto max-w-6xl">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div className="animate-fade-in">
+              <h1 className="font-heading text-5xl lg:text-6xl font-bold text-primary mb-6 leading-tight">
+                Консалтинг для роста вашего бизнеса
+              </h1>
+              <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
+                Экспертные решения и стратегии для развития компании. Помогаем бизнесу достигать целей и увеличивать прибыль.
+              </p>
+              <div className="flex gap-4">
+                <Button size="lg" className="text-lg px-8">
+                  Начать работу
+                </Button>
+                <Button size="lg" variant="outline" className="text-lg px-8">
+                  Узнать больше
+                </Button>
+              </div>
+            </div>
+            <div className="animate-slide-up">
+              <div className="bg-gradient-to-br from-accent/10 to-primary/5 rounded-2xl p-12 border border-border">
+                <div className="grid grid-cols-2 gap-6">
+                  <div className="text-center p-6 bg-white rounded-xl">
+                    <div className="text-4xl font-heading font-bold text-accent mb-2">15+</div>
+                    <div className="text-sm text-muted-foreground">Лет опыта</div>
+                  </div>
+                  <div className="text-center p-6 bg-white rounded-xl">
+                    <div className="text-4xl font-heading font-bold text-accent mb-2">500+</div>
+                    <div className="text-sm text-muted-foreground">Проектов</div>
+                  </div>
+                  <div className="text-center p-6 bg-white rounded-xl">
+                    <div className="text-4xl font-heading font-bold text-accent mb-2">98%</div>
+                    <div className="text-sm text-muted-foreground">Довольных клиентов</div>
+                  </div>
+                  <div className="text-center p-6 bg-white rounded-xl">
+                    <div className="text-4xl font-heading font-bold text-accent mb-2">24/7</div>
+                    <div className="text-sm text-muted-foreground">Поддержка</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="services" className="py-20 px-6 bg-secondary/30">
+        <div className="container mx-auto max-w-6xl">
+          <div className="text-center mb-16">
+            <h2 className="font-heading text-4xl lg:text-5xl font-bold text-primary mb-4">
+              Наши услуги
+            </h2>
+            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+              Комплексные решения для развития вашего бизнеса
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {[
+              {
+                icon: 'TrendingUp',
+                title: 'Стратегический консалтинг',
+                description: 'Разработка долгосрочных стратегий развития бизнеса и достижения целей'
+              },
+              {
+                icon: 'Users',
+                title: 'Управление персоналом',
+                description: 'Оптимизация HR-процессов, подбор и развитие команды'
+              },
+              {
+                icon: 'BarChart3',
+                title: 'Финансовый анализ',
+                description: 'Аудит финансовых показателей и рекомендации по оптимизации'
+              },
+              {
+                icon: 'Target',
+                title: 'Маркетинговая стратегия',
+                description: 'Разработка эффективных маркетинговых стратегий и их реализация'
+              },
+              {
+                icon: 'Settings',
+                title: 'Оптимизация процессов',
+                description: 'Автоматизация и улучшение бизнес-процессов компании'
+              },
+              {
+                icon: 'ShieldCheck',
+                title: 'Управление рисками',
+                description: 'Анализ и минимизация бизнес-рисков, антикризисное управление'
+              }
+            ].map((service, idx) => (
+              <Card key={idx} className="hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border-2">
+                <CardContent className="p-8">
+                  <div className="w-14 h-14 rounded-lg bg-accent/10 flex items-center justify-center mb-6">
+                    <Icon name={service.icon as any} className="text-accent" size={28} />
+                  </div>
+                  <h3 className="font-heading text-xl font-semibold text-primary mb-3">
+                    {service.title}
+                  </h3>
+                  <p className="text-muted-foreground leading-relaxed">
+                    {service.description}
+                  </p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section id="about" className="py-20 px-6">
+        <div className="container mx-auto max-w-6xl">
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
+            <div>
+              <h2 className="font-heading text-4xl lg:text-5xl font-bold text-primary mb-6">
+                О компании
+              </h2>
+              <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
+                SPECORG — ведущая консалтинговая компания с 15-летним опытом работы на рынке. Мы помогаем бизнесу любого масштаба решать сложные задачи и достигать амбициозных целей.
+              </p>
+              <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
+                Наша команда состоит из опытных специалистов с глубокими знаниями в различных отраслях. Мы используем проверенные методологии и современные инструменты для достижения результата.
+              </p>
+
+              <div className="space-y-4">
+                {[
+                  { icon: 'Award', text: 'Сертифицированные эксперты' },
+                  { icon: 'Zap', text: 'Быстрое внедрение решений' },
+                  { icon: 'Heart', text: 'Индивидуальный подход' },
+                  { icon: 'CheckCircle2', text: 'Гарантия результата' }
+                ].map((item, idx) => (
+                  <div key={idx} className="flex items-center gap-4">
+                    <div className="w-10 h-10 rounded-full bg-accent/10 flex items-center justify-center flex-shrink-0">
+                      <Icon name={item.icon as any} className="text-accent" size={20} />
+                    </div>
+                    <span className="text-lg text-foreground">{item.text}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <div className="relative">
+              <div className="bg-gradient-to-br from-accent/20 to-primary/10 rounded-2xl p-8 border-2 border-border">
+                <div className="space-y-6">
+                  <div className="bg-white p-6 rounded-xl">
+                    <div className="flex items-center gap-4 mb-3">
+                      <Icon name="Briefcase" className="text-accent" size={24} />
+                      <h3 className="font-heading text-lg font-semibold">Наша миссия</h3>
+                    </div>
+                    <p className="text-muted-foreground">
+                      Помогать бизнесу расти и развиваться через экспертные решения
+                    </p>
+                  </div>
+
+                  <div className="bg-white p-6 rounded-xl">
+                    <div className="flex items-center gap-4 mb-3">
+                      <Icon name="Eye" className="text-accent" size={24} />
+                      <h3 className="font-heading text-lg font-semibold">Наше видение</h3>
+                    </div>
+                    <p className="text-muted-foreground">
+                      Быть лидером в области бизнес-консалтинга в России
+                    </p>
+                  </div>
+
+                  <div className="bg-white p-6 rounded-xl">
+                    <div className="flex items-center gap-4 mb-3">
+                      <Icon name="Star" className="text-accent" size={24} />
+                      <h3 className="font-heading text-lg font-semibold">Наши ценности</h3>
+                    </div>
+                    <p className="text-muted-foreground">
+                      Профессионализм, честность, результативность
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" className="py-20 px-6 bg-secondary/30">
+        <div className="container mx-auto max-w-4xl">
+          <div className="text-center mb-12">
+            <h2 className="font-heading text-4xl lg:text-5xl font-bold text-primary mb-4">
+              Свяжитесь с нами
+            </h2>
+            <p className="text-xl text-muted-foreground">
+              Готовы обсудить ваш проект? Оставьте заявку, и мы свяжемся с вами
+            </p>
+          </div>
+
+          <Card className="border-2">
+            <CardContent className="p-8">
+              <form onSubmit={handleSubmit} className="space-y-6">
+                <div>
+                  <label className="block text-sm font-medium mb-2 text-foreground">
+                    Ваше имя
+                  </label>
+                  <Input
+                    placeholder="Иван Иванов"
+                    value={formData.name}
+                    onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                    className="h-12"
+                  />
+                </div>
+
+                <div>
+                  <label className="block text-sm font-medium mb-2 text-foreground">
+                    Email
+                  </label>
+                  <Input
+                    type="email"
+                    placeholder="ivan@example.com"
+                    value={formData.email}
+                    onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                    className="h-12"
+                  />
+                </div>
+
+                <div>
+                  <label className="block text-sm font-medium mb-2 text-foreground">
+                    Сообщение
+                  </label>
+                  <Textarea
+                    placeholder="Расскажите о вашем проекте..."
+                    value={formData.message}
+                    onChange={(e) => setFormData({ ...formData, message: e.target.value })}
+                    rows={6}
+                  />
+                </div>
+
+                <Button type="submit" size="lg" className="w-full text-lg">
+                  Отправить заявку
+                </Button>
+              </form>
+
+              <div className="mt-10 pt-8 border-t border-border">
+                <div className="grid md:grid-cols-3 gap-6">
+                  <div className="text-center">
+                    <Icon name="Phone" className="mx-auto mb-3 text-accent" size={24} />
+                    <div className="font-medium text-foreground mb-1">Телефон</div>
+                    <div className="text-muted-foreground">+7 (495) 123-45-67</div>
+                  </div>
+                  <div className="text-center">
+                    <Icon name="Mail" className="mx-auto mb-3 text-accent" size={24} />
+                    <div className="font-medium text-foreground mb-1">Email</div>
+                    <div className="text-muted-foreground">info@specorg.org</div>
+                  </div>
+                  <div className="text-center">
+                    <Icon name="MapPin" className="mx-auto mb-3 text-accent" size={24} />
+                    <div className="font-medium text-foreground mb-1">Адрес</div>
+                    <div className="text-muted-foreground">Москва, ул. Примерная, 1</div>
+                  </div>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+        </div>
+      </section>
+
+      <footer className="bg-primary text-primary-foreground py-12 px-6">
+        <div className="container mx-auto max-w-6xl">
+          <div className="grid md:grid-cols-4 gap-8 mb-8">
+            <div>
+              <div className="font-heading text-2xl font-bold mb-4">SPECORG</div>
+              <p className="text-primary-foreground/80 text-sm">
+                Профессиональный консалтинг для вашего бизнеса
+              </p>
+            </div>
+            <div>
+              <h4 className="font-heading font-semibold mb-4">Услуги</h4>
+              <ul className="space-y-2 text-sm text-primary-foreground/80">
+                <li><a href="#" className="hover:text-accent transition-colors">Стратегия</a></li>
+                <li><a href="#" className="hover:text-accent transition-colors">HR-консалтинг</a></li>
+                <li><a href="#" className="hover:text-accent transition-colors">Финансы</a></li>
+              </ul>
+            </div>
+            <div>
+              <h4 className="font-heading font-semibold mb-4">Компания</h4>
+              <ul className="space-y-2 text-sm text-primary-foreground/80">
+                <li><a href="#" className="hover:text-accent transition-colors">О нас</a></li>
+                <li><a href="#" className="hover:text-accent transition-colors">Команда</a></li>
+                <li><a href="#" className="hover:text-accent transition-colors">Карьера</a></li>
+              </ul>
+            </div>
+            <div>
+              <h4 className="font-heading font-semibold mb-4">Контакты</h4>
+              <ul className="space-y-2 text-sm text-primary-foreground/80">
+                <li>+7 (495) 123-45-67</li>
+                <li>info@specorg.org</li>
+              </ul>
+            </div>
+          </div>
+          <div className="pt-8 border-t border-primary-foreground/20 text-center text-sm text-primary-foreground/60">
+            © 2024 SPECORG. Все права защищены.
+          </div>
+        </div>
+      </footer>
     </div>
   );
 };
