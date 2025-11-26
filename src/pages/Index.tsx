@@ -155,8 +155,8 @@ const Index = () => {
               </Card>
               
               <div className="mt-6 flex justify-center">
-                <Button size="lg" variant="outline" className="text-lg px-8 w-full">
-                  Узнать больше
+                <Button size="lg" variant="outline" className="text-lg px-8 w-full" asChild>
+                  <a href="#services">Узнать больше</a>
                 </Button>
               </div>
             </div>
