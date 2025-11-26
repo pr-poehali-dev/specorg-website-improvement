@@ -108,9 +108,9 @@ const Index = () => {
                 description: 'Помогаем с финансовыми инструментами'
               },
               {
-                icon: 'DollarSign',
-                title: 'Финансовая поддержка',
-                description: 'Помогаем с финансовыми инструментами'
+                icon: 'Award',
+                title: 'Участие в торгах',
+                description: 'Обеспечиваем участие в торгах'
               },
               {
                 icon: 'ShieldCheck',
