@@ -191,32 +191,32 @@ const Index = () => {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
               {
-                icon: 'ShoppingCart',
+                image: 'https://cdn.poehali.dev/files/ff63dfb1-49b5-4f8e-b504-42f447972ad8.png',
                 title: 'Выгодные закупки',
                 description: 'Предлагаем выгодные закупки по вашим критериям'
               },
               {
-                icon: 'Target',
+                image: 'https://cdn.poehali.dev/files/c5008cbd-7c5f-4e76-820a-2e5ec03871cc.png',
                 title: 'Стратегия победы',
                 description: 'Разрабатываем стратегию победы'
               },
               {
-                icon: 'TrendingUp',
+                image: 'https://cdn.poehali.dev/files/5333b3c4-05fc-4079-aab6-de844ee7a723.png',
                 title: 'Финансовые инструменты',
                 description: 'Помогаем с финансовыми инструментами'
               },
               {
-                icon: 'Award',
+                image: 'https://cdn.poehali.dev/files/e4d7d6a1-d8a3-4557-b469-878efc124c5c.png',
                 title: 'Участие в торгах',
                 description: 'Обеспечиваем участие в торгах'
               },
               {
-                icon: 'ShieldCheck',
+                image: 'https://cdn.poehali.dev/files/f3b74a06-108d-4a1e-b030-67f5276a180c.png',
                 title: 'Защита интересов',
                 description: 'Защищаем ваши интересы до заключения контракта'
               },
               {
-                icon: 'FileText',
+                image: 'https://cdn.poehali.dev/files/b427d3d8-040a-4b0e-83d2-30896dad4899.png',
                 title: 'Исполнение контракта',
                 description: 'Консультируем на этапе исполнения контракта'
               }
@@ -224,7 +224,7 @@ const Index = () => {
               <Card key={idx} className="hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border-2">
                 <CardContent className="p-8">
                   <div className="w-14 h-14 rounded-lg bg-accent/10 flex items-center justify-center mb-6">
-                    <Icon name={service.icon as any} className="text-accent" size={28} />
+                    <img src={service.image} alt={service.title} className="w-8 h-8" />
                   </div>
                   <h3 className="font-heading text-xl font-semibold text-primary mb-3">
                     {service.title}
