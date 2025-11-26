@@ -36,13 +36,13 @@ const Index = () => {
 
       <section id="home" className="pt-32 pb-20 px-6">
         <div className="container mx-auto max-w-6xl">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="animate-fade-in lg:col-span-2">
-              <h1 className="font-heading text-4xl lg:text-5xl font-bold text-primary mb-8 leading-tight text-center">
-                УВЕЛИЧИВАЕМ ВАШУ ПРИБЫЛЬ ПУТЁМ ЭФФЕКТИВНОГО УЧАСТИЯ В СТРОИТЕЛЬНЫХ ТЕНДЕРАХ
-              </h1>
-              
-              <h2 className="font-heading text-2xl lg:text-3xl font-semibold text-primary mb-8 text-center">
+          <h1 className="font-heading text-4xl lg:text-5xl font-bold text-primary mb-12 leading-tight text-center animate-fade-in">
+            УВЕЛИЧИВАЕМ ВАШУ ПРИБЫЛЬ ПУТЁМ ЭФФЕКТИВНОГО УЧАСТИЯ В СТРОИТЕЛЬНЫХ ТЕНДЕРАХ
+          </h1>
+
+          <div className="grid lg:grid-cols-2 gap-12 items-start">
+            <div className="animate-fade-in">
+              <h2 className="font-heading text-2xl lg:text-3xl font-semibold text-primary mb-8">
                 СТУПЕНИ НАШЕГО С ВАМИ СОТРУДНИЧЕСТВА:
               </h2>
 
@@ -102,7 +102,7 @@ const Index = () => {
                 </Card>
               </div>
 
-              <div className="flex gap-4 justify-center mt-8">
+              <div className="flex gap-4 mt-8">
                 <Button size="lg" className="text-lg px-8">
                   Начать работу
                 </Button>
@@ -110,6 +110,58 @@ const Index = () => {
                   Узнать больше
                 </Button>
               </div>
+            </div>
+
+            <div className="animate-slide-up">
+              <Card className="border-2 bg-gradient-to-br from-accent/5 to-primary/5 sticky top-24">
+                <CardContent className="p-8">
+                  <h2 className="font-heading text-xl lg:text-2xl font-bold text-primary mb-6 text-center">
+                    ВЫ ДОВЕРЯЕТЕ НАМ - МЫ ОБЕСПЕЧИВАЕМ ВАМ:
+                  </h2>
+                  
+                  <div className="space-y-5">
+                    <div className="flex gap-3 items-start">
+                      <Icon name="CheckCircle2" className="text-accent flex-shrink-0 mt-1" size={24} />
+                      <div>
+                        <h3 className="font-heading font-bold text-primary mb-1">ОТВЕТСТВЕННОСТЬ</h3>
+                        <p className="text-sm text-muted-foreground">оплата наших услуг по результату</p>
+                      </div>
+                    </div>
+
+                    <div className="flex gap-3 items-start">
+                      <Icon name="Shield" className="text-accent flex-shrink-0 mt-1" size={24} />
+                      <div>
+                        <h3 className="font-heading font-bold text-primary mb-1">НАДЁЖНОСТЬ</h3>
+                        <p className="text-sm text-muted-foreground">мы выстраиваем долгосрочные партнёрские отношения с Вами</p>
+                      </div>
+                    </div>
+
+                    <div className="flex gap-3 items-start">
+                      <Icon name="Award" className="text-accent flex-shrink-0 mt-1" size={24} />
+                      <div>
+                        <h3 className="font-heading font-bold text-primary mb-1">ПРОФЕССИОНАЛИЗМ</h3>
+                        <p className="text-sm text-muted-foreground">мы гроссмейстеры в своей сфере</p>
+                      </div>
+                    </div>
+
+                    <div className="flex gap-3 items-start">
+                      <Icon name="Zap" className="text-accent flex-shrink-0 mt-1" size={24} />
+                      <div>
+                        <h3 className="font-heading font-bold text-primary mb-1">ЭФФЕКТИВНОСТЬ</h3>
+                        <p className="text-sm text-muted-foreground">ваше время и деньги работают с максимальной пользой</p>
+                      </div>
+                    </div>
+
+                    <div className="flex gap-3 items-start">
+                      <Icon name="Star" className="text-accent flex-shrink-0 mt-1" size={24} />
+                      <div>
+                        <h3 className="font-heading font-bold text-primary mb-1">УДОБСТВО</h3>
+                        <p className="text-sm text-muted-foreground">вы получаете обслуживание по принципу «одного» окна</p>
+                      </div>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
             </div>
           </div>
         </div>
