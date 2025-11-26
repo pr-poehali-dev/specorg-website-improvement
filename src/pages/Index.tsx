@@ -101,15 +101,6 @@ const Index = () => {
                   </CardContent>
                 </Card>
               </div>
-
-              <div className="flex gap-4 mt-8">
-                <Button size="lg" className="text-lg px-8">
-                  Начать работу
-                </Button>
-                <Button size="lg" variant="outline" className="text-lg px-8">
-                  Узнать больше
-                </Button>
-              </div>
             </div>
 
             <div className="animate-slide-up">
@@ -162,6 +153,12 @@ const Index = () => {
                   </div>
                 </CardContent>
               </Card>
+              
+              <div className="mt-6 flex justify-center">
+                <Button size="lg" variant="outline" className="text-lg px-8 w-full">
+                  Узнать больше
+                </Button>
+              </div>
             </div>
           </div>
         </div>
