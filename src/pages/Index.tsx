@@ -19,7 +19,7 @@ const Index = () => {
 
   return (
     <div className="min-h-screen">
-      <header className="fixed top-0 w-full bg-white/95 backdrop-blur-sm border-b border-border z-50">
+      <header className="fixed top-0 w-full bg-background/95 backdrop-blur-sm border-b border-border z-50">
         <nav className="container mx-auto px-6 py-4">
           <div className="flex items-center justify-between">
             <div className="font-heading text-2xl font-bold text-primary">SPECORG</div>
@@ -263,30 +263,30 @@ const Index = () => {
             <div className="relative">
               <div className="bg-gradient-to-br from-accent/20 to-primary/10 rounded-2xl p-8 border-2 border-border">
                 <div className="space-y-6">
-                  <div className="bg-white p-6 rounded-xl">
+                  <div className="bg-secondary p-6 rounded-xl border border-border">
                     <div className="flex items-center gap-4 mb-3">
                       <Icon name="Briefcase" className="text-accent" size={24} />
-                      <h3 className="font-heading text-lg font-semibold">Наша миссия</h3>
+                      <h3 className="font-heading text-lg font-semibold text-foreground">Наша миссия</h3>
                     </div>
                     <p className="text-muted-foreground">
                       Помогать бизнесу расти и развиваться через экспертные решения
                     </p>
                   </div>
 
-                  <div className="bg-white p-6 rounded-xl">
+                  <div className="bg-secondary p-6 rounded-xl border border-border">
                     <div className="flex items-center gap-4 mb-3">
                       <Icon name="Eye" className="text-accent" size={24} />
-                      <h3 className="font-heading text-lg font-semibold">Наше видение</h3>
+                      <h3 className="font-heading text-lg font-semibold text-foreground">Наше видение</h3>
                     </div>
                     <p className="text-muted-foreground">
                       Быть лидером в области бизнес-консалтинга в России
                     </p>
                   </div>
 
-                  <div className="bg-white p-6 rounded-xl">
+                  <div className="bg-secondary p-6 rounded-xl border border-border">
                     <div className="flex items-center gap-4 mb-3">
                       <Icon name="Star" className="text-accent" size={24} />
-                      <h3 className="font-heading text-lg font-semibold">Наши ценности</h3>
+                      <h3 className="font-heading text-lg font-semibold text-foreground">Наши ценности</h3>
                     </div>
                     <p className="text-muted-foreground">
                       Профессионализм, честность, результативность
@@ -379,18 +379,18 @@ const Index = () => {
         </div>
       </section>
 
-      <footer className="bg-primary text-primary-foreground py-12 px-6">
+      <footer className="bg-secondary border-t border-border text-foreground py-12 px-6">
         <div className="container mx-auto max-w-6xl">
           <div className="grid md:grid-cols-4 gap-8 mb-8">
             <div>
               <div className="font-heading text-2xl font-bold mb-4">SPECORG</div>
-              <p className="text-primary-foreground/80 text-sm">
+              <p className="text-muted-foreground text-sm">
                 Профессиональный консалтинг для вашего бизнеса
               </p>
             </div>
             <div>
               <h4 className="font-heading font-semibold mb-4">Услуги</h4>
-              <ul className="space-y-2 text-sm text-primary-foreground/80">
+              <ul className="space-y-2 text-sm text-muted-foreground">
                 <li><a href="#" className="hover:text-accent transition-colors">Стратегия</a></li>
                 <li><a href="#" className="hover:text-accent transition-colors">HR-консалтинг</a></li>
                 <li><a href="#" className="hover:text-accent transition-colors">Финансы</a></li>
@@ -398,7 +398,7 @@ const Index = () => {
             </div>
             <div>
               <h4 className="font-heading font-semibold mb-4">Компания</h4>
-              <ul className="space-y-2 text-sm text-primary-foreground/80">
+              <ul className="space-y-2 text-sm text-muted-foreground">
                 <li><a href="#" className="hover:text-accent transition-colors">О нас</a></li>
                 <li><a href="#" className="hover:text-accent transition-colors">Команда</a></li>
                 <li><a href="#" className="hover:text-accent transition-colors">Карьера</a></li>
@@ -406,13 +406,13 @@ const Index = () => {
             </div>
             <div>
               <h4 className="font-heading font-semibold mb-4">Контакты</h4>
-              <ul className="space-y-2 text-sm text-primary-foreground/80">
+              <ul className="space-y-2 text-sm text-muted-foreground">
                 <li>+7 (495) 123-45-67</li>
                 <li>info@specorg.org</li>
               </ul>
             </div>
           </div>
-          <div className="pt-8 border-t border-primary-foreground/20 text-center text-sm text-primary-foreground/60">
+          <div className="pt-8 border-t border-border text-center text-sm text-muted-foreground">
             © 2024 SPECORG. Все права защищены.
           </div>
         </div>
