@@ -120,42 +120,42 @@ const Index = () => {
                   </h2>
                   
                   <div className="space-y-5">
-                    <div className="flex gap-3 items-start">
-                      <img src="https://cdn.poehali.dev/files/88009640-7bf2-4987-b16f-a9841b2d79ae.png" alt="Ответственность" className="w-6 h-6 flex-shrink-0 mt-1" />
+                    <div className="flex gap-4 items-start group cursor-pointer">
+                      <img src="https://cdn.poehali.dev/files/88009640-7bf2-4987-b16f-a9841b2d79ae.png" alt="Ответственность" className="w-10 h-10 flex-shrink-0 mt-0.5 transition-transform duration-300 group-hover:scale-110" />
                       <div>
-                        <h3 className="font-heading font-bold text-primary mb-1">ОТВЕТСТВЕННОСТЬ</h3>
+                        <h3 className="font-heading font-bold text-primary mb-1 transition-colors group-hover:text-accent">ОТВЕТСТВЕННОСТЬ</h3>
                         <p className="text-sm text-muted-foreground">оплата наших услуг по результату</p>
                       </div>
                     </div>
 
-                    <div className="flex gap-3 items-start">
-                      <img src="https://cdn.poehali.dev/files/a0d40b24-b1c4-4a87-98e5-07e36f4a253d.png" alt="Надёжность" className="w-6 h-6 flex-shrink-0 mt-1" />
+                    <div className="flex gap-4 items-start group cursor-pointer">
+                      <img src="https://cdn.poehali.dev/files/a0d40b24-b1c4-4a87-98e5-07e36f4a253d.png" alt="Надёжность" className="w-10 h-10 flex-shrink-0 mt-0.5 transition-transform duration-300 group-hover:scale-110" />
                       <div>
-                        <h3 className="font-heading font-bold text-primary mb-1">НАДЁЖНОСТЬ</h3>
+                        <h3 className="font-heading font-bold text-primary mb-1 transition-colors group-hover:text-accent">НАДЁЖНОСТЬ</h3>
                         <p className="text-sm text-muted-foreground">мы выстраиваем долгосрочные партнёрские отношения с Вами</p>
                       </div>
                     </div>
 
-                    <div className="flex gap-3 items-start">
-                      <img src="https://cdn.poehali.dev/files/11401bb7-557e-4b4b-930a-5362fb1e67a0.png" alt="Профессионализм" className="w-6 h-6 flex-shrink-0 mt-1" />
+                    <div className="flex gap-4 items-start group cursor-pointer">
+                      <img src="https://cdn.poehali.dev/files/11401bb7-557e-4b4b-930a-5362fb1e67a0.png" alt="Профессионализм" className="w-10 h-10 flex-shrink-0 mt-0.5 transition-transform duration-300 group-hover:scale-110" />
                       <div>
-                        <h3 className="font-heading font-bold text-primary mb-1">ПРОФЕССИОНАЛИЗМ</h3>
+                        <h3 className="font-heading font-bold text-primary mb-1 transition-colors group-hover:text-accent">ПРОФЕССИОНАЛИЗМ</h3>
                         <p className="text-sm text-muted-foreground">мы гроссмейстеры в своей сфере</p>
                       </div>
                     </div>
 
-                    <div className="flex gap-3 items-start">
-                      <img src="https://cdn.poehali.dev/files/c3ef2575-9898-4443-9208-e6bedf6fd71f.png" alt="Эффективность" className="w-6 h-6 flex-shrink-0 mt-1" />
+                    <div className="flex gap-4 items-start group cursor-pointer">
+                      <img src="https://cdn.poehali.dev/files/c3ef2575-9898-4443-9208-e6bedf6fd71f.png" alt="Эффективность" className="w-10 h-10 flex-shrink-0 mt-0.5 transition-transform duration-300 group-hover:scale-110" />
                       <div>
-                        <h3 className="font-heading font-bold text-primary mb-1">ЭФФЕКТИВНОСТЬ</h3>
+                        <h3 className="font-heading font-bold text-primary mb-1 transition-colors group-hover:text-accent">ЭФФЕКТИВНОСТЬ</h3>
                         <p className="text-sm text-muted-foreground">ваше время и деньги работают с максимальной пользой</p>
                       </div>
                     </div>
 
-                    <div className="flex gap-3 items-start">
-                      <img src="https://cdn.poehali.dev/files/2a5ada3c-04a5-4853-a861-bfdd8a62cb0c.png" alt="Удобство" className="w-6 h-6 flex-shrink-0 mt-1" />
+                    <div className="flex gap-4 items-start group cursor-pointer">
+                      <img src="https://cdn.poehali.dev/files/2a5ada3c-04a5-4853-a861-bfdd8a62cb0c.png" alt="Удобство" className="w-10 h-10 flex-shrink-0 mt-0.5 transition-transform duration-300 group-hover:scale-110" />
                       <div>
-                        <h3 className="font-heading font-bold text-primary mb-1">УДОБСТВО</h3>
+                        <h3 className="font-heading font-bold text-primary mb-1 transition-colors group-hover:text-accent">УДОБСТВО</h3>
                         <p className="text-sm text-muted-foreground">вы получаете обслуживание по принципу «одного» окна</p>
                       </div>
                     </div>
